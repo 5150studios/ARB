@@ -48,4 +48,5 @@ get_header(); ?>
 			</div><!-- .col-md-4 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
+		
 <?php get_footer(); ?>

@@ -6,3 +6,115 @@ Version: 0.1
 Text Domain: allriverbatteries
 */
 
+
+
+
+/*--- IE 10 & WP 8 FIX ---*/
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/*--- END IE 10 & WP 8 FIX ---*/
+
+/* Box-sizing resets
+ *
+ * Reset individual elements or override regions to avoid conflicts due to
+ * global box model settings of Bootstrap. Two options, individual overrides and
+ * region resets, are available as plain CSS and uncompiled Less formats.
+ */
+
+/*
+---Option 1A: Override a single element's box model via CSS ---
+
+.element {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+--- Option 1B: Override a single element's box model by using a Bootstrap Less mixin ---
+
+.element {
+  .box-sizing(content-box);
+}
+
+--- END Box-sizing resets ---*/
+
+.intro {
+	background: #044c88;
+	padding: 10px 0;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.intro .col-md-12 {
+	padding: 0;
+}
+.nav > li > a {
+  color: #373839;
+}
+
+.main-menu {
+  margin-right: -15px;
+  margin-top: 20px;
+}
+
+.logo {
+	background: url("images/logo.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
+	display: block;
+	font: 0px/0 a;
+	height: 106px;
+	margin: 25px 0 0;
+	text-shadow: none;
+	width: 460px;
+	z-index: 999;
+}
+.phone-number {
+	background: url("images/phone-number.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
+	display: block;
+	font: 0px/0 a;
+	height: 35px;
+	margin: 25px 0 0;
+	text-shadow: none;
+	width: 368px;
+	z-index: 999;
+}
+
+#content {
+  padding: 25px 0;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+}
+
+.site-content .container {
+  margin-top: 107px;
+}
+.brands {
+  border-top: 1px solid #CCCCCC;
+  margin: 60px auto;
+  padding-top: 60px;
+}
+
+.brands img {
+  max-width: 100%;
+}
+.footer {
+  background: url("images/footer.png") no-repeat scroll center 0 / cover  #044C88;
+  min-height: 509px;
+}
+
+.site-footer {
+	color: #aacfee;
+	margin-top: 230px;
+
+}
+
+.site-footer strong {
+	color: #FFFFFF;
+}

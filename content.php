@@ -61,4 +61,5 @@
 
 		<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+
 </article><!-- #post-## -->

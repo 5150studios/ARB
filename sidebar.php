@@ -6,7 +6,7 @@
  * @package upBootWP 1.1
  */
 ?>
-	<div id="secondary" class="widget-area well well-sm" role="complementary">
+	<div id="secondary" class="widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 

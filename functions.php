@@ -62,6 +62,10 @@ function upbootwp_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	));
+		register_sidebar(array('id' => 'arb-footer', 'name' => 'Footer 1', 'before_widget' => '<div id="%1$s" class="widget col-md-4 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer2', 'name' => 'Footer 2', 'before_widget' => '<div id="%1$s" class="widget col-md-3 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer3', 'name' => 'Footer 3', 'before_widget' => '<div id="%1$s" class="widget col-md-3 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer4', 'name' => 'Footer 4', 'before_widget' => '<div id="%1$s" class="widget col-md-2 %2$s">', 'after_widget'  => '</div>'));
 }
 add_action( 'widgets_init', 'upbootwp_widgets_init' );
 
@@ -72,6 +76,7 @@ function upbootwp_scripts() {
 	wp_enqueue_script( 'upbootwp-basefile', get_template_directory_uri().'/js/bootstrap.min.js',array(),'1.1',true);
 	wp_enqueue_script( 'html5shiv', get_template_directory_uri().'/js/html5shiv.js',array(),null,true);
 	wp_enqueue_script( 'respond', get_template_directory_uri().'/js/respond.js',array(),null,true);
+	wp_enqueue_script( 'scripts', get_template_directory_uri().'/js/scripts.js',array(),null,true);
 }
 add_action( 'wp_enqueue_scripts', 'upbootwp_scripts' );
 
