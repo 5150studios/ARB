@@ -40,7 +40,7 @@
 					</div>
 					<div class="row copyright">
 					<div class="site-info">
-						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
+						&copy; Copyright <?php bloginfo('name'); ?> <?php echo date("Y"); ?>
 					</div><!-- .site-info -->
 					<div class="site-info-links">
 						<?php wp_nav_menu(array('theme_location' => 'copyright_menu', 'container_class' => 'copyrightnav')); ?>
