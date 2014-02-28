@@ -28,8 +28,8 @@ function upbootwp_setup() {
 	 */
 	//add_theme_support( 'post-thumbnails' );
 
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'Bootstrap WP Primary' ),
+	register_nav_menus( 
+		array('primary' => __( 'Primary Menu', 'Bootstrap WP Primary' ),'copyright_menu' => 'Copyright Menu',
 	) );
 
 	/**
@@ -62,10 +62,10 @@ function upbootwp_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	));
-		register_sidebar(array('id' => 'arb-footer', 'name' => 'Footer 1', 'before_widget' => '<div id="%1$s" class="widget col-md-4 %2$s">', 'after_widget'  => '</div>'));
-		register_sidebar(array('id' => 'arb-footer2', 'name' => 'Footer 2', 'before_widget' => '<div id="%1$s" class="widget col-md-3 %2$s">', 'after_widget'  => '</div>'));
-		register_sidebar(array('id' => 'arb-footer3', 'name' => 'Footer 3', 'before_widget' => '<div id="%1$s" class="widget col-md-3 %2$s">', 'after_widget'  => '</div>'));
-		register_sidebar(array('id' => 'arb-footer4', 'name' => 'Footer 4', 'before_widget' => '<div id="%1$s" class="widget col-md-2 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer', 'name' => 'Footer 1', 'before_widget' => '<div id="%1$s" class="widget col-md-4 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer2', 'name' => 'Footer 2', 'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer3', 'name' => 'Footer 3', 'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer4', 'name' => 'Footer 4', 'before_widget' => '<div id="%1$s" class="widget col-md-2 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
 }
 add_action( 'widgets_init', 'upbootwp_widgets_init' );
 

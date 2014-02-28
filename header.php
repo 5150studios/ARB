@@ -26,7 +26,7 @@
 	<div class="intro">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 col-sm-12">
 					<span class="pull-right"><?php bloginfo('description'); ?></span>
 				</div>
 			</div>
@@ -39,10 +39,10 @@
 				<div class="row">
 					<div class="col-md-12">
 				        <div class="row">
-							<div class="col-md-5">
-				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="logo"><?php bloginfo( 'name' ); ?></a>
+							<div class="col-md-4 col-sm-12">
+				            	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="logo"><?php bloginfo( 'name' ); ?></a>
 				        	</div>
-				        <div class="col-md-7">
+				        <div class="col-md-7 col-md-offset-1 col-sm-12">
 				        	<h3 class="phone-number pull-right">1300 255 748</h3>
 				            <?php 
 						$args = array('theme_location' => 'primary', 
@@ -63,12 +63,12 @@
 
 	<div id="content" class="site-content">
 
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div id="carousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel" data-slide-to="1"></li>
+		    <li data-target="#carousel" data-slide-to="2"></li>
 		  </ol>
 
 		  <!-- Wrapper for slides -->
@@ -90,13 +90,11 @@
 		  </div>
 
 		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		  <a class="left carousel-control" href="#carousel" data-slide="prev">
 		    <span class="glyphicon glyphicon-chevron-left"></span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		  <a class="right carousel-control" href="#carousel" data-slide="next">
 		    <span class="glyphicon glyphicon-chevron-right"></span>
 		  </a>
 		</div>
-
-
-	<?php //get_template_directory_uri(); ?>
+		<div class="stream"></div>

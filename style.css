@@ -43,14 +43,12 @@ Text Domain: allriverbatteries
 
 --- END Box-sizing resets ---*/
 
+/*--- HEADER ---*/
 .intro {
 	background: #044c88;
 	padding: 10px 0;
 	color: #FFFFFF;
 	font-size: 12px;
-}
-.intro .col-md-12 {
-	padding: 0;
 }
 .nav > li > a {
   color: #373839;
@@ -62,15 +60,15 @@ Text Domain: allriverbatteries
 }
 
 .logo {
-	background: url("images/logo.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
-	color: rgba(0, 0, 0, 0);
-	display: block;
-	font: 0px/0 a;
-	height: 106px;
-	margin: 25px 0 0;
-	text-shadow: none;
-	width: 460px;
-	z-index: 999;
+  background: url("images/logo.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  display: block;
+  font: 0px/0 a;
+  height: 83px;
+  margin: 25px 0 0;
+  text-shadow: none;
+  width: 360px;
+  z-index: 999;
 }
 .phone-number {
 	background: url("images/phone-number.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
@@ -83,6 +81,107 @@ Text Domain: allriverbatteries
 	width: 368px;
 	z-index: 999;
 }
+/*--- END HEADER ---*/
+
+
+/*--- SIDEBAR ---*/
+#text-3 {
+	margin-bottom: 70px;
+}
+
+.phone-num {
+  color: #373839;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.locations > a {
+  color: #373839;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.locations > a:hover {
+    color: #6d6e70;
+    font-style: underline;
+}
+
+.textwidget > h1 {
+  color: #373839;
+  font-family: "helvetica neue",helvetica;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.quick-contact-form {
+  color: #373839;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.widget-title {
+  color: #044C88;
+  font-size: 18px;
+}
+
+.form-input {
+  background: none repeat scroll 0 0 #373839;
+  border: medium none;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 15px 0 15px 15px;
+  width: 100%;
+}
+
+.wpcf7-submit {
+  background: none repeat scroll 0 0 #044C88;
+  border: none;
+  padding:  15px 30px;
+  color:  #FFF;
+  font-size: 14px;
+}
+
+div.wpcf7 {
+  float:left;
+}
+/*-- SIDEBAR FORM VALIDATION--*/
+span.wpcf7-not-valid-tip {
+  background: none repeat scroll 0 0 #FE4343;
+    border: 1px solid #C90C0C;
+  color: #FFFFFF;
+  display: block;
+  font-size: 1em;
+  margin: 2px 14px 13px 0;
+  padding: 0 0 0 17px;
+  width: 100%;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+  background: none repeat scroll 0 0 #FE4343;
+  border: 1px solid #C90C0C;
+  color: #FFFFFF;
+  margin: 20px 0 0;
+  width: 100%;
+}
+/*-- ENDSIDEBAR FORM VALIDATION--*/
+/*--- END SIDEBAR ---*/
+.stream {
+  background: url("images/stream.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 233px;
+  width: 940px;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+}
+
+.entry-content a {
+  text-decoration: none;
+  color: #373839;
+  font-size: 28px;
+}
+
 
 #content {
   padding: 25px 0;
@@ -104,17 +203,167 @@ Text Domain: allriverbatteries
 .brands img {
   max-width: 100%;
 }
+
+/*--- FOOTER ---*/
 .footer {
   background: url("images/footer.png") no-repeat scroll center 0 / cover  #044C88;
   min-height: 509px;
 }
+
 
 .site-footer {
 	color: #aacfee;
 	margin-top: 230px;
 
 }
-
 .site-footer strong {
 	color: #FFFFFF;
+}
+
+#menu-footer-batteries > .menu-item, #menu-main-menu > .menu-item, #menu-footer-services > .menu-item{
+  list-style-type: square;
+  
+}
+.menu {
+  padding: 0 0 0 17px;
+}
+.menu-item > a {
+ color: #aacfee;
+}
+
+.site-header .menu-item > a:hover {
+  color: #373839;
+  font-style: underline;
+}
+
+.footer a:hover, .footer a:active {
+	color: #FFFFFF;
+}
+
+  .widget_nav_menu h2 {
+	color: #FFFFFF;
+}
+
+.site-info {
+  float: left;
+  padding-left: 16px;
+}
+.copyrightnav ul li {
+  float: left;
+  list-style: none;
+  padding: 0 7px 0 0;
+  margin-right: 7px;
+  border-right: 1px solid #6e9fc7;
+
+
+}
+.copyrightnav ul li:last-child {
+ 
+  border-right: none;
+
+}
+.copyrightnav ul {
+  float:right;
+  margin: 0;
+  display:inline;
+}
+.copyright {
+	margin-bottom: 20px;
+}
+/*--- END FOOTER ---*/
+
+@media screen and (max-width: 479px) {
+
+	.intro {
+	  padding: 10px;
+	  text-align: center;
+	  width: 100%;
+	}
+
+	.logo {
+	  background-position: center center;
+	  background-size: 100% auto;
+	  width: 100%;
+	}
+
+	.phone-number {
+	  background-position: center center;
+	  background-size: 100% auto;
+	  margin: 10px 0;
+	  width: 100%;
+	}
+
+	.main-menu {
+		margin: 0px;
+	}
+
+	.nav > li {
+		width: 100%;
+	}
+
+	.site-content .container {
+		margin-top: 30px;
+	}
+	.form-input {
+		width: 100%;
+	}
+
+	.wpcf7-submit {
+		width: 100%;
+	}
+
+	.execphpwidget img {
+		width: 100%;
+	}
+
+	.brands .col-xs-12 {
+  		text-align: center;
+ 		margin-bottom: 20px;
+	}
+
+	.site-info {
+		margin-bottom: 5px;
+	}
+
+	.site-info-links {
+		float: left;
+	}
+
+	.copyrightnav ul{
+		float: left;
+	}
+
+	.copyrightnav ul li {
+		margin-bottom: 5px;
+	}
+
+	.footer {
+		background-position: center -150px
+	}
+
+	.site-footer {
+		margin-top: 65px;
+	}
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 992px) {
+	.logo {
+	  background-position: center center;
+	  width: 100%;
+	}
+	.brands .col-xs-12 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+	.pull-right{
+		float: none !important;
+	}
+
+	.phone-number {
+	  background-position: center center;
+	  width: 100%;
+	}
+
 }

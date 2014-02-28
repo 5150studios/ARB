@@ -10,17 +10,17 @@
 ?>
 
 	</div><!-- #content -->
-	<div class="container brands clear-fix">
+	<div class="container brands">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-sm-4 col-xs-12">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/bosch-batteries.png" alt="Bosch Batteries" />
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4 col-xs-12">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/trojan-batteries.png" alt="Trojan Batteries" />
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4 col-xs-12">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries.png" alt="All River Batteries" />
 					</div>
 				</div>
@@ -30,7 +30,7 @@
 	<div class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 col-sm-12">
 				<footer id="colophon" class="site-footer" role="contentinfo">
 					<div class="row">
 						<?php dynamic_sidebar('Footer 1'); ?>
@@ -38,9 +38,14 @@
 						<?php dynamic_sidebar('Footer 3'); ?>
 						<?php dynamic_sidebar('Footer 4'); ?>
 					</div>
+					<div class="row copyright">
 					<div class="site-info">
 						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
 					</div><!-- .site-info -->
+					<div class="site-info-links">
+						<?php wp_nav_menu(array('theme_location' => 'copyright_menu', 'container_class' => 'copyrightnav')); ?>
+					</div><!-- .site-info-links -->
+				</div><!-- Row -->
 				</footer><!-- #colophon -->
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
