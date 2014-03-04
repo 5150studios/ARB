@@ -14,7 +14,7 @@ a, a:link, a:visited {
 
 /*--- HEADER ---*/
 .intro {
-	background: #044c
+	background: #044c88;
 	padding: 10px 0;
 	color: #FFFFFF;
 	font-size: 12px;
@@ -22,12 +22,10 @@ a, a:link, a:visited {
 .nav > li > a {
   color: #373839;
 }
-
 .main-menu {
   margin-right: -15px;
   margin-top: 20px;
 }
-
 .logo {
   background: url("../images/logo.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 0);
@@ -56,7 +54,6 @@ a, a:link, a:visited {
   margin-bottom: 10px;
 }
 /**** END Images ****/
-
 /**** Single ****/
 .entry-meta {
   border-bottom: 1px dotted #CCCCCC;
@@ -234,8 +231,6 @@ span.wpcf7-not-valid-tip {
   background: url("../images/footer.png") no-repeat scroll center 0 / cover  #044C88;
   min-height: 509px;
 }
-
-
 .site-footer {
 	color: #aacfee;
 	margin-top: 240px;
@@ -255,7 +250,6 @@ span.wpcf7-not-valid-tip {
 .menu-item > a {
  color: #aacfee;
 }
-
 .site-header .menu-item > a:hover {
   color: #373839;
 }
@@ -263,7 +257,6 @@ span.wpcf7-not-valid-tip {
 .footer a:hover, .footer a:active {
 	color: #FFFFFF;
 }
-
 .footer .widget-title {
 	color: #FFFFFF;
 }
@@ -296,20 +289,17 @@ span.wpcf7-not-valid-tip {
 	  text-align: center;
 	  width: 100%;
 	}
-
 	.logo {
 	  background-position: center center;
 	  background-size: 100% auto;
 	  width: 100%;
 	}
-
 	.phone-number {
 	  background-position: center center;
 	  background-size: 100% auto;
 	  margin: 10px 0;
 	  width: 100%;
 	}
-
 	.main-menu {
 		margin: 0px;
 	}
