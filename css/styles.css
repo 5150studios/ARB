@@ -1,0 +1,386 @@
+/*--- IE 10 & WP 8 FIX ---*/
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/*--- END IE 10 & WP 8 FIX ---*/
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+/*--- HEADER ---*/
+.intro {
+	background: #044c
+	padding: 10px 0;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.nav > li > a {
+  color: #373839;
+}
+
+.main-menu {
+  margin-right: -15px;
+  margin-top: 20px;
+}
+
+.logo {
+  background: url("../images/logo.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  display: block;
+  font: 0px/0 a;
+  height: 83px;
+  margin: 25px 0 0;
+  text-shadow: none;
+  width: 360px;
+  z-index: 999;
+}
+.phone-number {
+	background: url("../images/phone-number.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
+	display: block;
+	font: 0px/0 a;
+	height: 35px;
+	margin: 25px 0 0;
+	text-shadow: none;
+	width: 368px;
+	z-index: 999;
+}
+/*--- END HEADER ---*/
+/**** Images ****/
+.featured-image {
+  margin-bottom: 10px;
+}
+/**** END Images ****/
+
+/**** Single ****/
+.entry-meta {
+  border-bottom: 1px dotted #CCCCCC;
+  border-top: 1px dotted #CCCCCC;
+  font-style: italic;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.socialmedia ul {
+  margin: 5px 0;
+  padding: 0;
+}
+.socialmedia ul li {
+  border-right: 1px dotted #CCCCCC;
+  display: inline;
+  padding-right: 5px;
+}
+.socialmedia ul li:first-child, .socialmedia ul li:last-child {
+border-right: none;
+}
+/**** END Single ****/
+/**** Sidebar ****/
+
+#secondary .widget {
+  margin-bottom: 60px;
+}
+
+#secondary .search-form input {
+  border-radius: 0;
+  float: left;
+  height: 34px; 
+}
+
+#secondary .search-form .search-field {
+  width: 70%;
+}
+
+#secondary .search-form .search-submit {
+  width: 30%;
+}
+
+#team-spotlight img {
+  max-width: 100%;
+  width: auto;
+}
+
+#team-spotlight .carousel-caption {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  color: #EEEEEE;
+  left: 0;
+  padding: 10px;
+  text-align: left;
+  width: 240px;
+}
+
+.phone-num {
+  color: #373839;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.locations a {
+  color: #373839;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.locations > a:hover {
+    color: #6d6e70;
+    font-style: underline;
+}
+
+.textwidget > h1 {
+  color: #373839;
+  font-family: "helvetica neue",helvetica;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.quick-contact-form {
+  color: #373839;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.widget-title {
+  color: #044C88;
+  font-size: 18px;
+}
+
+input, select, textarea {
+  background: none repeat scroll 0 0 #373839;
+  border: medium none;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 15px;
+  width: 100%;
+}
+
+#submit {
+  width: auto;
+}
+
+.wpcf7-submit {
+  border-radius: 0;
+  font-size: 14px;
+  width: auto;
+}
+/**** End Sidebar ****/
+/**** Contact Form Validation ****/
+span.wpcf7-not-valid-tip {
+  background: none repeat scroll 0 0 #E56969;
+  border: 1px solid #CB4848;
+  color: #FFFFFF;
+  font-size: 11px;
+  margin: 0;
+  padding: 6px;
+  width: 100%;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+  background: none repeat scroll 0 0 #E56969;
+  border: 1px solid #CB4848;
+  color: #FFFFFF;
+  width: 100%;
+  margin: 0;
+  font-size: 11px;
+}
+/**** End Contact Form Validation ****/
+
+.stream {
+  background: url("../images/stream.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 233px;
+  width: 940px;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+}
+
+#content {
+  padding: 25px 0;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+}
+
+.front-page.site-content .container {
+  margin-top: 107px;
+}
+
+.site-content .container {
+  margin-top: 60px;
+}
+
+.footer .container {
+  margin-top: 0;
+}
+
+.brands {
+  border-top: 1px solid #CCCCCC;
+  margin: 60px auto;
+  padding-top: 60px;
+}
+
+.brands img {
+  max-width: 100%;
+}
+
+/*--- FOOTER ---*/
+.footer {
+  background: url("../images/footer.png") no-repeat scroll center 0 / cover  #044C88;
+  min-height: 509px;
+}
+
+
+.site-footer {
+	color: #aacfee;
+	margin-top: 240px;
+  margin-bottom: 10px;
+
+}
+.site-footer strong {
+	color: #FFFFFF;
+}
+
+.footer ul li {
+  list-style-type: square;
+}
+.menu {
+  padding: 0 0 0 17px;
+}
+.menu-item > a {
+ color: #aacfee;
+}
+
+.site-header .menu-item > a:hover {
+  color: #373839;
+}
+
+.footer a:hover, .footer a:active {
+	color: #FFFFFF;
+}
+
+.footer .widget-title {
+	color: #FFFFFF;
+}
+
+.site-info {
+  float: left;
+  padding-left: 16px;
+}
+.copyrightnav ul li {
+  float: left;
+  list-style: none;
+  padding: 0 7px 0 0;
+  margin-right: 7px;
+  border-right: 1px solid #6e9fc7;
+}
+.copyrightnav ul li:last-child {
+  border-right: none;
+}
+.copyrightnav ul {
+  float:right;
+  margin: 0;
+  display:inline;
+}
+/*--- END FOOTER ---*/
+
+@media screen and (max-width: 479px) {
+
+	.intro {
+	  padding: 10px;
+	  text-align: center;
+	  width: 100%;
+	}
+
+	.logo {
+	  background-position: center center;
+	  background-size: 100% auto;
+	  width: 100%;
+	}
+
+	.phone-number {
+	  background-position: center center;
+	  background-size: 100% auto;
+	  margin: 10px 0;
+	  width: 100%;
+	}
+
+	.main-menu {
+		margin: 0px;
+	}
+
+	.nav > li {
+		width: 100%;
+	}
+
+	.site-content .container {
+		margin-top: 30px;
+	}
+	.form-input {
+		width: 100%;
+	}
+
+	.wpcf7-submit {
+		width: 100%;
+	}
+
+	.execphpwidget img {
+		width: 100%;
+	}
+
+	.brands .col-xs-12 {
+  		text-align: center;
+ 		margin-bottom: 20px;
+	}
+
+	.site-info {
+		margin-bottom: 5px;
+	}
+
+	.site-info-links {
+		float: left;
+	}
+
+	.copyrightnav ul{
+		float: left;
+	}
+
+	.copyrightnav ul li {
+		margin-bottom: 5px;
+	}
+
+	.footer {
+		background-position: center -150px
+	}
+
+	.site-footer {
+		margin-top: 65px;
+	}
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 992px) {
+	.logo {
+	  background-position: center center;
+	  width: 100%;
+	}
+	.brands .col-xs-12 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+	.pull-right{
+		float: none !important;
+	}
+
+	.phone-number {
+	  background-position: center center;
+	  width: 100%;
+	}
+
+}

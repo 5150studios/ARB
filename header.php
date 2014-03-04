@@ -34,7 +34,7 @@
 	</div>
 	<header id="masthead" class="site-header container" role="banner">
 		<nav class="" role="navigation">
-		
+
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -44,13 +44,13 @@
 				        	</div>
 				        <div class="col-md-7 col-md-offset-1 col-sm-12">
 				        	<h3 class="phone-number pull-right">1300 255 748</h3>
-				            <?php 
-						$args = array('theme_location' => 'primary', 
-									  'container_class' => 'main-menu pull-right', 
+				            <?php
+						$args = array('theme_location' => 'primary',
+									  'container_class' => 'main-menu pull-right',
 									  'menu_class' => 'nav nav-pills',
 									  'fallback_cb' => '',
 			                          'menu_id' => 'main-menu',
-			                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
+			                          'walker' => new Upbootwp_Walker_Nav_Menu());
 						wp_nav_menu($args);
 						?>
 				        </div>
@@ -58,10 +58,11 @@
 				</div><!-- row -->
 			</div><!-- container -->
 		</nav>
-		
+
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+<?php if( is_home() || is_front_page() ) : ?>
+	<div id="content" class="front-page site-content">
 
 		<div id="carousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
@@ -73,19 +74,18 @@
 
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
-		    
-		    <div class="item active">
-		      <img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries-team.jpg" alt="all-river-batteries-team">
-		    </div>
 
-		    <div class="item ">
+		    <div class="item active">
 		      <img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries-trucks.jpg" alt="all-river-batteries-trucks">
 		    </div>
 
-		    <div class="item ">
+		    <div class="item">
 		      <img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries-vehicles.jpg" alt="all-river-batteries-vehicles">
 		    </div>
 
+		    <div class="item">
+		      <img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries-team.jpg" alt="all-river-batteries-team">
+		    </div>
 
 		  </div>
 
@@ -97,4 +97,9 @@
 		    <span class="glyphicon glyphicon-chevron-right"></span>
 		  </a>
 		</div>
+
+<?php else : ?>
+	<div id="content" class="site-content">
+<?php endif; ?>
+
 		<div class="stream"></div>

@@ -9,6 +9,10 @@
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
+		<?php if (has_post_thumbnail()) : ?>
+			<div class="featured-image"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('featured', array('alt' => get_the_title(), 'title' => get_the_title())); ?></a></div>
+		<?php endif; ?>
+
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php upbootwp_posted_on(); ?>

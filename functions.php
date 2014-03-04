@@ -50,6 +50,10 @@ function upbootwp_setup() {
 
 add_action( 'after_setup_theme', 'upbootwp_setup' );
 
+//Add support for thumbnails...
+add_theme_support('post-thumbnails');
+add_image_size('featured', 750, 9999, false);
+
 /**
  * Register widgetized area and update sidebar with default widgets
  */
@@ -62,16 +66,17 @@ function upbootwp_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	));
-		register_sidebar(array('id' => 'arb-footer', 'name' => 'Footer 1', 'before_widget' => '<div id="%1$s" class="widget col-md-4 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
-		register_sidebar(array('id' => 'arb-footer2', 'name' => 'Footer 2', 'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
-		register_sidebar(array('id' => 'arb-footer3', 'name' => 'Footer 3', 'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
-		register_sidebar(array('id' => 'arb-footer4', 'name' => 'Footer 4', 'before_widget' => '<div id="%1$s" class="widget col-md-2 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer', 'name' => 'Footer 1', 'before_title'  => '<h4 class="widget-title">', 'after_title'   => '</h4>', 'before_widget' => '<div id="%1$s" class="widget col-md-4 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer2', 'name' => 'Footer 2', 'before_title'  => '<h4 class="widget-title">', 'after_title'   => '</h4>', 'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer3', 'name' => 'Footer 3', 'before_title'  => '<h4 class="widget-title">', 'after_title'   => '</h4>', 'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
+		register_sidebar(array('id' => 'arb-footer4', 'name' => 'Footer 4', 'before_title'  => '<h4 class="widget-title">', 'after_title'   => '</h4>', 'before_widget' => '<div id="%1$s" class="widget col-md-2 col-sm-6 %2$s">', 'after_widget'  => '</div>'));
 }
 add_action( 'widgets_init', 'upbootwp_widgets_init' );
 
 function upbootwp_scripts() {
 	wp_enqueue_style( 'upbootwp-css', get_template_directory_uri().'/css/upbootwp.min.css', array(), '1.1');
 	wp_enqueue_style( 'style', get_template_directory_uri().'/style.css', array(), null);
+	wp_enqueue_style( 'styles-css', get_template_directory_uri().'/css/styles.min.css', array(), null);
 	wp_enqueue_script( 'upbootwp-jQuery', get_template_directory_uri().'/js/jquery.js',array(),'2.0.3',true);
 	wp_enqueue_script( 'upbootwp-basefile', get_template_directory_uri().'/js/bootstrap.min.js',array(),'1.1',true);
 	wp_enqueue_script( 'html5shiv', get_template_directory_uri().'/js/html5shiv.js',array(),null,true);
@@ -120,6 +125,62 @@ require get_template_directory().'/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory().'/inc/jetpack.php';
+
+
+/**
+ * Shortcodes for Grid Layout
+ */
+function md_row($atts, $content = null) {
+	return '<div class="row">' . do_shortcode($content) . '</div>';
+}
+add_shortcode("row", "md_row");
+
+function md_span3($atts, $content = null) {
+	return '<div class="col-sm-3">' . wpautop(do_shortcode($content)) . '</div>';
+}
+add_shortcode("span3", "md_span3");
+
+function md_span3_offset($atts, $content = null) {
+	return '<div class="col-sm-3 col-sm-offset-1">' . wpautop(do_shortcode($content)) . '</div>';
+}
+add_shortcode("span3_offset", "md_span3_offset");
+
+function md_span4($atts, $content = null) {
+	return '<div class="col-sm-4">' . wpautop(do_shortcode($content)) . '</div>';
+}
+add_shortcode("span4", "md_span4");
+
+function md_span6($atts, $content = null) {
+	return '<div class="col-sm-6">' . wpautop(do_shortcode($content)) . '</div>';
+}
+add_shortcode("span6", "md_span6");
+
+function md_span8($atts, $content = null) {
+	return '<div class="col-sm-8">' . wpautop(do_shortcode($content)) . '</div>';
+}
+add_shortcode("span8", "md_span8");
+
+function md_span12($atts, $content = null) {
+	return '<div class="col-sm-12">' . wpautop(do_shortcode($content)) . '</div>';
+}
+add_shortcode("span12", "md_span12");
+
+function md_icon($atts, $content = null) {
+	return '<span class="glyphicon ' . do_shortcode($content) . '"></span>';
+}
+add_shortcode("icon", "md_icon");
+
+function social_media_links() {		
+	$link = urlencode(get_permalink());
+	$title = urlencode(get_the_title());
+				
+	echo '<ul><li><strong>Share:</strong></li>
+	<li><a href="http://www.facebook.com/sharer.php?u='.$link.'&amp;t='.$title.'" target="_blank"><i class="icon-facebook-sign"></i> Facebook</a></li>
+	<li><a href="http://twitter.com/share?text='.$title.'&url='.$link.'" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a></li>
+	<li><a href="https://plusone.google.com/_/+1/confirm?hl=en&url='.$link.'&title='.$title.'" target="_blank"><i class="icon-google-plus-sign"></i> Google+</a></li>
+	<li><a href="'.get_bloginfo('rss2_url').'"><i class="icon-rss"></i> RSS</a></li></ul>';		
+}
+
 
 
 /**

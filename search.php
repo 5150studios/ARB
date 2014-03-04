@@ -38,9 +38,9 @@ get_header(); ?>
 				</section><!-- #primary -->
 			</div><!-- .col-md-8 -->
 			
-			<div class="col-md-4">
+			<div class="col-md-3 col-sm-offset-1">
 				<?php get_sidebar(); ?>
-			</div><!-- .col-md-4 -->
+			</div><!-- .col-md-3 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 <?php get_footer(); ?>
