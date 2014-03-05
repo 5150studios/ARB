@@ -228,8 +228,10 @@ span.wpcf7-not-valid-tip {
 
 /*--- FOOTER ---*/
 .footer {
-  background: url("../images/footer.png") no-repeat scroll center 0 / cover  #044C88;
+  background: url("../images/footer.png") no-repeat scroll center 0 #044C88;
+  background-size: cover;
   min-height: 509px;
+  width: 100%;
 }
 .site-footer {
 	color: #aacfee;
