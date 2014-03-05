@@ -22,6 +22,7 @@ a, a:link, a:visited {
 	padding: 10px 0;
 	color: #FFFFFF;
 	font-size: 12px;
+  width: 100%;  
 }
 .nav > li > a {
   color: #373839;
@@ -296,11 +297,10 @@ span.wpcf7-not-valid-tip {
 
 @media screen and (max-width: 479px) {
 
-	.intro {
-	  padding: 10px;
-	  text-align: center;
-	  width: 100%;
-	}
+  .intro {
+    padding: 10px;
+    text-align: center;
+  }
 	.logo {
 	  background-position: center center;
 	  background-size: 100% auto;

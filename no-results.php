@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'upbootwp' ); ?></h1>
+		<h1 class="page-title"><?php _e( 'More to Come', 'upbootwp' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -26,7 +26,7 @@
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'upbootwp' ); ?></p>
+			<p><?php _e( 'We are currently producing more great information and content for you to enjoy!', 'upbootwp' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
