@@ -300,6 +300,10 @@ span.wpcf7-not-valid-tip {
     max-width: 100%;
     height: auto;
   }
+  div.wpcf7 img.ajax-loader {
+    width: auto;
+    height: auto;
+  }
   .intro {
     padding: 10px;
     text-align: center;
