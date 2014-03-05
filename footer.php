@@ -27,7 +27,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">
+</div><!-- #page -->
+
+<div class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
@@ -51,7 +53,6 @@
 		</div><!-- .row -->
 	</div><!-- container -->
 </div>
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
