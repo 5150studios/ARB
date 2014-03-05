@@ -27,8 +27,8 @@ a, a:link, a:visited {
   margin-top: 20px;
 }
 .logo {
-  background: url("../images/logo.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);
-  color: rgba(0, 0, 0, 0);
+  background: url("../images/logo.png") no-repeat scroll left 0 transparent;
+  color: transparent;
   display: block;
   font: 0px/0 a;
   height: 83px;
@@ -38,8 +38,8 @@ a, a:link, a:visited {
   z-index: 999;
 }
 .phone-number {
-	background: url("../images/phone-number.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
-	color: rgba(0, 0, 0, 0);
+	background: url("../images/phone-number.png") no-repeat scroll center 0 transparent;
+	color: transparent;
 	display: block;
 	font: 0px/0 a;
 	height: 35px;
@@ -187,7 +187,7 @@ span.wpcf7-not-valid-tip {
 /**** End Contact Form Validation ****/
 
 .stream {
-  background: url("../images/stream.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../images/stream.png") no-repeat scroll 0 0 transparent;
   display: block;
   height: 233px;
   width: 940px;
