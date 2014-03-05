@@ -8,7 +8,7 @@
 get_header(); ?>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-8 col-sm-12">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main" role="main">
 			
@@ -30,7 +30,7 @@ get_header(); ?>
 				</div><!-- #primary -->
 			</div><!-- .col-md-8 -->
 			
-			<div class="col-md-3 col-sm-offset-1">
+			<div class="col-md-3 col-sm-12 col-md-offset-1">
 				<?php get_sidebar(); ?>
 			</div><!-- .col-md-3 -->
 		</div><!-- .row -->
