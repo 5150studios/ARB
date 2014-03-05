@@ -296,7 +296,10 @@ span.wpcf7-not-valid-tip {
 /*--- END FOOTER ---*/
 
 @media screen and (max-width: 479px) {
-
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   .intro {
     padding: 10px;
     text-align: center;
