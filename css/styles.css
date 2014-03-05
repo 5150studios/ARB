@@ -236,14 +236,14 @@ span.wpcf7-not-valid-tip {
   background-size: cover;
   min-height: 509px;
   width: 100%;
+  color:#AACFEE;
 }
 .site-footer {
-	color: #aacfee;
 	margin-top: 240px;
   margin-bottom: 10px;
 
 }
-.site-footer strong {
+.footer strong {
 	color: #FFFFFF;
 }
 
