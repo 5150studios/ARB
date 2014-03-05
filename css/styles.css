@@ -228,6 +228,8 @@ span.wpcf7-not-valid-tip {
 
 /*--- FOOTER ---*/
 .footer {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/footer.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/footer.png',sizingMethod='scale')";
   background-image: url("../images/footer.png");
   background-repeat: no-repeat;
   background-position: center 0;
