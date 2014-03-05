@@ -31,7 +31,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<footer id="colophon" class="site-footer" role="contentinfo">
+				<div id="colophon" class="site-footer" role="contentinfo">
 					<div class="row">
 						<?php dynamic_sidebar('Footer 1'); ?>
 						<?php dynamic_sidebar('Footer 2'); ?>
@@ -46,7 +46,7 @@
 						<?php wp_nav_menu(array('theme_location' => 'copyright_menu', 'container_class' => 'copyrightnav')); ?>
 					</div><!-- .site-info-links -->
 				</div><!-- Row -->
-				</footer><!-- #colophon -->
+				</div><!-- #colophon -->
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 	</div><!-- container -->
