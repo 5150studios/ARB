@@ -12,6 +12,10 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
+#page {
+  width: 100%;
+}
+
 /*--- HEADER ---*/
 .intro {
 	background: #044c88;
