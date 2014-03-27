@@ -66,6 +66,9 @@ blockquote {
 }
 /**** END Images ****/
 /**** Single ****/
+.entry-content ul li {
+  margin: 10px 0;
+}
 .entry-meta {
   border-bottom: 1px dotted #CCCCCC;
   border-top: 1px dotted #CCCCCC;

@@ -52,7 +52,7 @@ add_action( 'after_setup_theme', 'upbootwp_setup' );
 
 //Add support for thumbnails...
 add_theme_support('post-thumbnails');
-add_image_size('featured', 750, 9999, false);
+add_image_size('featured', 750, 9999, true);
 
 /**
  * Register widgetized area and update sidebar with default widgets
