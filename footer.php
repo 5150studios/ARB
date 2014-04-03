@@ -39,21 +39,22 @@
 						<?php dynamic_sidebar('Footer 2'); ?>
 						<?php dynamic_sidebar('Footer 3'); ?>
 						<?php dynamic_sidebar('Footer 4'); ?>
-					</div>
+					</div><!-- /row -->
 					<div class="row copyright">
-					<div class="site-info">
-						&copy; Copyright <?php bloginfo('name'); ?> <?php echo date("Y"); ?>
-					</div><!-- .site-info -->
-					<div class="site-info-links">
-						<?php wp_nav_menu(array('theme_location' => 'copyright_menu', 'container_class' => 'copyrightnav')); ?>
-					</div><!-- .site-info-links -->
-				</div><!-- Row -->
+						<div class="site-info">
+							&copy; Copyright <?php bloginfo('name'); ?> <?php echo date("Y"); ?>
+						</div><!-- .site-info -->
+						<div class="site-info-links">
+							<?php wp_nav_menu(array('theme_location' => 'copyright_menu', 'container_class' => 'copyrightnav')); ?>
+						</div><!-- .site-info-links -->
+					</div><!-- Row -->
 				</div><!-- #colophon -->
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 	</div><!-- container -->
-</div>
+</div><!-- /footer -->
 
+</div><!-- /#page -->
 <?php wp_footer(); ?>
 
 </body>
