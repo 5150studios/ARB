@@ -29,13 +29,11 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<span class="pull-right"><?php bloginfo('description'); ?></span>
-				</div>
-			</div>
-		</div>
-	</div>
+				</div><!-- /col-md-12 col-sm-12 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /intro -->
 	<header id="masthead" class="site-header container" role="banner">
-		<nav class="" role="navigation">
-
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -46,20 +44,18 @@
 				        <div class="col-md-7 col-md-offset-1 col-sm-12">
 				        	<h3 class="phone-number pull-right">1300 255 748</h3>
 				            <?php
-						$args = array('theme_location' => 'primary',
-									  'container_class' => 'main-menu pull-right',
-									  'menu_class' => 'nav nav-pills',
-									  'fallback_cb' => '',
-			                          'menu_id' => 'main-menu',
-			                          'walker' => new Upbootwp_Walker_Nav_Menu());
-						wp_nav_menu($args);
-						?>
-				        </div>
+								$args = array('theme_location' => 'primary',
+											  'container_class' => 'main-menu pull-right',
+											  'menu_class' => 'nav nav-pills',
+											  'fallback_cb' => '',
+					                          'menu_id' => 'main-menu',
+					                          'walker' => new Upbootwp_Walker_Nav_Menu());
+								wp_nav_menu($args);
+							?>
+				        </div><!-- /row -->
 					</div><!-- .col-md-12 -->
 				</div><!-- row -->
 			</div><!-- container -->
-		</nav>
-
 	</header><!-- #masthead -->
 
 <?php if( is_home() || is_front_page() ) : ?>
