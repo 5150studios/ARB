@@ -131,7 +131,7 @@ require get_template_directory().'/inc/jetpack.php';
  * Shortcodes for Grid Layout
  */
 function md_row($atts, $content = null) {
-	return '<div class="row">' . do_shortcode($content) . '</div>';
+	return '<div class="row">' . wpautop(do_shortcode($content)) . '</div>';
 }
 add_shortcode("row", "md_row");
 
