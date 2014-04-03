@@ -8,6 +8,11 @@
 
 /*--- END IE 10 & WP 8 FIX ---*/
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
 a, a:link, a:visited {
   text-decoration: none;
 }
@@ -47,6 +52,9 @@ blockquote {
   text-shadow: none;
   width: 360px;
   z-index: 999;
+}
+.logo:hover, .logo:focus, .logo:active {
+color: 0,0,0,0;
 }
 .phone-number {
 	background: url("../images/phone-number.png") no-repeat scroll center 0 transparent;
