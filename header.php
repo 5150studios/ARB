@@ -33,7 +33,7 @@
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /intro -->
-	<header id="masthead" class="site-header container" role="banner">
+	<div id="masthead" class="site-header container" role="banner">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -56,7 +56,7 @@
 					</div><!-- .col-md-12 -->
 				</div><!-- row -->
 			</div><!-- container -->
-	</header><!-- #masthead -->
+	</div><!-- #masthead -->
 
 <?php if( is_home() || is_front_page() ) : ?>
 	<div id="content" class="front-page site-content">
