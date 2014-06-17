@@ -271,6 +271,14 @@ span.wpcf7-not-valid-tip {
 	color: #FFFFFF;
 }
 
+.footer a:link, .footer a:visited {
+  color: #AACFEE;
+}
+
+.footer a:hover, .footer a:active {
+  color: #FFFFFF;
+}
+
 .footer ul li {
   list-style-type: square;
 }
