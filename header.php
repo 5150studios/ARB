@@ -88,6 +88,10 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 		      <img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries-team.jpg" alt="all-river-batteries-team">
 		    </div>
 
+			<div class="item">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/bosch-battery-range.jpg" alt="Complete Bosch Battery Range">
+			</div>
+
 		  </div>
 
 		  <!-- Controls -->
