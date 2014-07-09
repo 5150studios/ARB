@@ -37,6 +37,8 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /intro -->
+
+
 	<div id="masthead" class="site-header container" role="banner">
 		<div class="container">
 			<div class="row">
@@ -56,6 +58,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 				                          'walker' => new Upbootwp_Walker_Nav_Menu());
 							wp_nav_menu($args);
 						?>
+					</div><!-- col-md-7 -->
 			        </div><!-- /row -->
 				</div><!-- .col-md-12 -->
 			</div><!-- row -->
@@ -63,41 +66,46 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 	</div><!-- #masthead -->
 
 <?php if( is_home() || is_front_page() ) : ?>
-	<div id="content" class="front-page site-content">
+<div class="slideshow">
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel" data-slide-to="1"></li>
+	    <li data-target="#carousel" data-slide-to="2"></li>
+	    <li data-target="#carousel" data-slide-to="3"></li>
+	  </ol>
 
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel" data-slide-to="1"></li>
-		    <li data-target="#carousel" data-slide-to="2"></li>
-		  </ol>
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
 
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-
-		    <div class="item active">
-		      <img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries-trucks.jpg" alt="all-river-batteries-trucks">
-		    </div>
-
-		    <div class="item">
-		      <img src="<?php echo get_template_directory_uri(); ?>/images/all-river-batteries-vehicles.jpg" alt="all-river-batteries-vehicles">
-		    </div>
-
-			<div class="item">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/bosch-battery-range.jpg" alt="Complete Bosch Battery Range">
-			</div>
-
-		  </div>
-
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left"></span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right"></span>
-		  </a>
+	  	<div class="item active">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/slideshow/bosch-batteries.jpg" alt="Complete Bosch Battery Range">
 		</div>
+
+	    <div class="item">
+	      <img src="<?php echo get_template_directory_uri(); ?>/images//slideshow/roadside-battery-replacement.jpg" alt="Roadside Battery Replacement Services">
+	    </div>
+
+	    <div class="item">
+	      <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow/all-river-batteries-vehicles.jpg" alt="All River Batteries Vehicles">
+	    </div>
+
+	    <div class="item">
+	      <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow/all-river-batteries-team.jpg" alt="All River Batteries Team">
+	    </div>
+
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
+	</div>
+</div>
 
 <?php else : ?>
 	<div id="content" class="site-content">
