@@ -12,9 +12,18 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
+h2 {
+  color: #044c88;
+}
 
 a, a:link, a:visited {
   text-decoration: none;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 blockquote {
@@ -27,12 +36,47 @@ blockquote {
   width: 100%;
 }
 
+.row.front-feature-boxes {
+  padding: 0 15px;
+}
+
+.row.front-feature-boxes .featurebox {
+  background: none repeat scroll 0 0 #044c88;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #023b6a;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.row.front-feature-boxes .featurebox h3 {
+  text-shadow: 1px 1px 0 #022c4f;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.row.front-feature-boxes .featurebox p {
+  color: #c6e4fd;
+}
+
+.row.front-feature-boxes .featurebox p strong {
+  color: #FFFFFF;
+}
+
 /*--- HEADER ---*/
+.site-header {
+  margin-bottom: 20px;
+}
+
+.slideshow {
+  margin-bottom: 20px;
+}
+
 .intro {
-	background: #044c88;
-	padding: 10px 0;
-	color: #FFFFFF;
-	font-size: 12px;
+  background: #044c88;
+  padding: 10px 0;
+  color: #FFFFFF;
+  font-size: 12px;
   width: 100%;  
 }
 .nav > li > a {
@@ -57,15 +101,15 @@ blockquote {
 color: 0,0,0,0;
 }
 .phone-number {
-	background: url("../images/phone-number.png") no-repeat scroll center 0 transparent;
-	color: transparent;
-	display: block;
-	font: 0px/0 a;
-	height: 35px;
-	margin: 25px 0 0;
-	text-shadow: none;
-	width: 368px;
-	z-index: 999;
+  background: url("../images/phone-number.png") no-repeat scroll center 0 transparent;
+  color: transparent;
+  display: block;
+  font: 0px/0 a;
+  height: 35px;
+  margin: 25px 0 0;
+  text-shadow: none;
+  width: 368px;
+  z-index: 999;
 }
 /*--- END HEADER ---*/
 /**** Images ****/
@@ -137,6 +181,16 @@ border-right: none;
   font-size: 28px;
   font-weight: bold;
   margin: 0;
+}
+
+.locations {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.locations em {
+  display: block;
+  margin-bottom: 14px;
 }
 
 .locations a {
@@ -212,10 +266,11 @@ span.wpcf7-not-valid-tip {
   background: url("../images/stream.png") no-repeat scroll 0 0 transparent;
   display: block;
   height: 233px;
-  width: 940px;
-  z-index: 0;
   position: absolute;
   right: 0;
+  width: 940px;
+  z-index: 0;
+  bottom: 230px;
 }
 
 #content {
@@ -263,12 +318,12 @@ span.wpcf7-not-valid-tip {
   color:#AACFEE;
 }
 .site-footer {
-	margin-top: 240px;
+  margin-top: 240px;
   margin-bottom: 10px;
 
 }
 .footer strong {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .footer a:link, .footer a:visited {
@@ -293,10 +348,10 @@ span.wpcf7-not-valid-tip {
 }
 
 .footer a:hover, .footer a:active {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 .footer .widget-title {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .site-info {
@@ -340,88 +395,96 @@ span.wpcf7-not-valid-tip {
     padding: 10px;
     text-align: center;
   }
-	.logo {
-	  background-position: center center;
-	  background-size: 100% auto;
-	  width: 100%;
-	}
-	.phone-number {
-	  background-position: center center;
-	  background-size: 100% auto;
-	  margin: 10px 0;
-	  width: 100%;
-	}
-	.main-menu {
-		margin: 0px;
-	}
+  .logo {
+    background-position: center center;
+    background-size: 100% auto;
+    width: 100%;
+  }
+  .phone-number {
+    background-position: center center;
+    background-size: 100% auto;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .main-menu {
+    margin: 0px;
+  }
 
-	.nav > li {
-		width: 100%;
-	}
+  .nav > li {
+    width: 100%;
+  }
 
-	.site-content .container {
-		margin-top: 30px;
-	}
-	.form-input {
-		width: 100%;
-	}
+  .site-content .container {
+    margin-top: 30px;
+  }
+  .form-input {
+    width: 100%;
+  }
 
-	.wpcf7-submit {
-		width: 100%;
-	}
+  .wpcf7-submit {
+    width: 100%;
+  }
 
-	.execphpwidget img {
-		width: 100%;
-	}
+  .execphpwidget img {
+    width: 100%;
+  }
 
-	.brands .col-xs-12 {
-  		text-align: center;
- 		margin-bottom: 20px;
-	}
+  .brands .col-xs-12 {
+      text-align: center;
+    margin-bottom: 20px;
+  }
 
-	.site-info {
-		margin-bottom: 5px;
-	}
+  .site-info {
+    margin-bottom: 5px;
+  }
 
-	.site-info-links {
-		float: left;
-	}
+  .site-info-links {
+    float: left;
+  }
 
-	.copyrightnav ul{
-		float: left;
-	}
+  .copyrightnav ul{
+    float: left;
+  }
 
-	.copyrightnav ul li {
-		margin-bottom: 5px;
-	}
+  .copyrightnav ul li {
+    margin-bottom: 5px;
+  }
 
-	.footer {
-		background-position: center -150px
-	}
+  .footer {
+    background-position: center -150px
+  }
 
-	.site-footer {
-		margin-top: 65px;
-	}
+  .site-footer {
+    margin-top: 65px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .row.front-feature-boxes .featurebox {
+    width: 31%;
+    margin: 1%;
+    padding: 0;
+  }
 }
 
 
 @media screen and (min-width: 480px) and (max-width: 992px) {
-	.logo {
-	  background-position: center center;
-	  width: 100%;
-	}
-	.brands .col-xs-12 {
+  .logo {
+    background-position: center center;
+    width: 100%;
+  }
+  .brands .col-xs-12 {
     text-align: center;
     margin-bottom: 20px;
   }
 
-	.pull-right{
-		float: none !important;
-	}
+  .pull-right{
+    float: none !important;
+  }
 
-	.phone-number {
-	  background-position: center center;
-	  width: 100%;
-	}
+  .phone-number {
+    background-position: center center;
+    width: 100%;
+  }
 
 }
